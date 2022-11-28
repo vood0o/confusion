@@ -1,0 +1,22 @@
+mat-list{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-text {
+  text-align: center;
+  padding: 1rem 0rem 0.2rem 0rem;
+}
+
+$lt-gray: #ddd;
+$background-dark: #512DA8;
+$background-light: #9575CD;
+$background-pale: #D1C4E9;
+
+.footer{
+    background-color: $background-pale;
+}
+
+.footer-toolbar{
+  background-color: $background-pale;
+}
