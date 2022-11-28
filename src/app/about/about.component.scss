@@ -1,0 +1,20 @@
+.leader-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0;
+
+  img {
+    border-radius: 50%;
+    max-width: 50px;
+  }
+}
+
+.info {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 12px;
+}
