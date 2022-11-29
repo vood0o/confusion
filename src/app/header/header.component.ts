@@ -1,4 +1,6 @@
+import { LoginComponent } from './../login/login.component';
 import { Component } from '@angular/core';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-header',
@@ -7,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  constructor(public dialog: MatDialog) { }
+
+  openLoginForm() {
+    this.dialog.open(LoginComponent, { width: '500px', height: '450px' })
+  }
 }
