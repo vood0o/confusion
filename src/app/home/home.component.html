@@ -13,6 +13,10 @@
       </p>
     </mat-card-content>
   </mat-card>
+  <div [hidden]="dish">
+    <mat-spinner diameter="50"></mat-spinner>
+    <h4>Loading ... Please wait!</h4>
+  </div>
 
   <mat-card *ngIf="promotion" class="promo-card">
     <mat-card-header>
@@ -27,6 +31,10 @@
       </p>
     </mat-card-content>
   </mat-card>
+  <div [hidden]="promotion">
+    <mat-spinner diameter="50"></mat-spinner>
+    <h4>Loading ... Please wait!</h4>
+  </div>
 
   <mat-card *ngIf="leader" class="promo-card">
     <mat-card-header>
@@ -41,5 +49,9 @@
       </p>
     </mat-card-content>
   </mat-card>
+  <div [hidden]="leader">
+    <mat-spinner diameter="50"></mat-spinner>
+    <h4>Loading ... Please wait!</h4>
+  </div>
 
 </div>

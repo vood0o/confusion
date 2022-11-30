@@ -19,6 +19,10 @@
         </mat-card-actions>
       </mat-card>
     </div>
+    <div [hidden]="dish">
+      <mat-spinner diameter="50"></mat-spinner>
+      <h4>Loading ... Please wait!</h4>
+    </div>
   </div>
 
   <div class="flexed-div">
