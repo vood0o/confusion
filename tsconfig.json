@@ -22,10 +22,11 @@
       "es2020",
       "dom"
     ],
-    "useDefineForClassFields": false
+    "useDefineForClassFields": false,
+    "strictPropertyInitialization":false
   },
   "angularCompilerOptions": {
-    // "strictPropertyInitialization": false,
+    "strictPropertyInitialization": false,
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
