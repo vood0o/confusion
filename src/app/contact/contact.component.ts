@@ -18,19 +18,19 @@ export class ContactComponent implements OnInit {
     'firstname': '',
     'lastname': '',
     'telnum': '',
-    'email': '',
+    'email': ''
   };
 
   validationMessages = {
     'firstname': {
-      'required': 'First name is required.',
-      'minLength': 'First name must be at least 2 characters long.',
-      'maxLength': 'First name cannot be more than 25 characters long.',
+      'required': 'First Name is required.',
+      'minlength': 'First Name must be at least 2 characters long.',
+      'maxlength': 'FirstName cannot be more than 25 characters long.'
     },
     'lastname': {
-      'required': 'Last name is required.',
-      'minLength': 'Last name must be at least 2 characters long.',
-      'maxLength': 'Last name cannot be more than 25 characters long.',
+      'required': 'Last Name is required.',
+      'minlength': 'Last Name must be at least 2 characters long.',
+      'maxlength': 'Last Name cannot be more than 25 characters long.'
     },
     'telnum': {
       'required': 'Tel. number is required.',
@@ -38,8 +38,8 @@ export class ContactComponent implements OnInit {
     },
     'email': {
       'required': 'Email is required.',
-      'email': 'Email format is not valid.'
-    }
+      'email': 'Email not in valid format.'
+    },
   };
 
   constructor(private fb: FormBuilder) {
